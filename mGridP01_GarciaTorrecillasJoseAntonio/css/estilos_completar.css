@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Alfa Slab One';
+}
+
+.p1 {
+  color: #52057b;
+}
+
+img {
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(3, 500px);
+  grid-template-areas:
+    "header header header header header"
+    "nav  main main main article"
+    "nav space  article1 article2 article3"
+    "footer footer footer footer footer";
+  margin: 20px auto;
+  width: 100%;
+  font-family: 'Dancing Script';
+}
+
+header {
+  grid-area: header;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #bbb;
+  text-align: center;
+}
+
+header div {
+  height: 50px;
+  margin: 10px;
+}
+
+footer {
+  grid-area: footer;
+  height: 100px;
+  background-color: cadetblue;
+  margin-top: 20px;
+  font-size: large;
+  text-align: center;
+}
+
+footer .p1 {
+  padding: 0;
+  margin: 0;
+}
+
+footer .p1,
+footer .copyright,
+footer .social {
+
+ -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right;
+  font-size: 12px;
+  padding: 0 8%;
+  min-width: 300px;
+  width: 33%;
+
+}
+
+footer .p1 {
+
+   text-align: left;
+
+ }
+
+footer ul {
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  margin: 0;
+  padding: 0
+}
+
+footer li {
+  list-style: none;
+  margin: 0 5px;
+  font-size: large;
+  color: black;
+  z-index: 1;
+  display: inline;
+}
+
+nav {
+  grid-area: nav;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+nav li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+  grid-area: main;
+  margin-top: -250px;
+  margin-left: -500px;
+}
+
+article {
+  grid-area: article;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+
+#article1 {
+  grid-area: article1;
+  margin-top: -100px;
+  margin-left: -500px;
+  text-align: center;
+}
+
+#article2 {
+  grid-area: article2;
+  margin-top: -100px;
+  margin-left: -400px;
+  text-align: center;
+}
+
+#article3 {
+  grid-area: article3;
+  margin-top: -100px;
+  margin-left: -300px;
+  text-align: center;
+}
+
+#space {
+  margin-top: 100px;
+  background-color: white;
+  grid-area: space;
+}

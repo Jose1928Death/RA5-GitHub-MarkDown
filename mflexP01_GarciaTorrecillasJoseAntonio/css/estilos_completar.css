@@ -1,0 +1,168 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+
+* {
+  /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+  margin: 0;
+
+  /* Estilo para las fuentes(Font google) en toda la página */
+  font-family: 'Alfa Slab One';
+}
+
+/*Aspecto especifico*/
+/* classe .container - fuente, color, 80% ancho y centrado*/
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Dancing Script';
+}
+
+/*color de la letra específico*/
+
+.p1 {
+  color: #52057b;
+}
+
+img {
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+/*La cabecera*/
+
+header {
+  background-color: #bbb;
+  display: flex;
+  flex-flow: column wrap;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header div {
+  height: 50px;
+  margin: 10px;
+}
+
+/* El contenedor flex para la primera fila de contenido .content_wrapper. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+.content_wrapper {
+  background-color: burlywood;
+  display: flex;
+  height: 1000px;
+  padding: 5em;
+  margin-top: 2em;
+}
+
+/* El menú */
+
+.content_wrapper nav {
+  margin-top: 0px;
+  overflow: hidden;
+  flex-basis: 10%;
+}
+
+.content_wrapper nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+.content_wrapper nav li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* El elemento principal main*/
+
+.content_wrapper main {
+  flex-basis: 50%;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+/* Artículo. Imágenes pequeñas */
+
+.content_wrapper article {
+  flex-basis: 40%;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+/* El contenedor flex para la segunda fila de contenido .articles. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+.articles {
+  background-color: burlywood;
+  display: flex;
+  padding: 1em;
+}
+
+.articles :nth-child(1) {
+  order: 3;
+  flex-basis: 15%;
+}
+
+.articles :nth-child(2) {
+  order: 1;
+  flex-basis: 15%;
+}
+
+.articles :nth-child(3) {
+  order: 2;
+  flex-basis: 15%;
+  flex-grow: 1;
+}
+
+/* Pie de la página */
+/* El contenedor flex para la tercera fila de contenido footer. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+footer {
+  background-color: cadetblue;
+  margin-top: 20px;
+  display: flex;
+  font-size: 1.2em;
+  font-size: large;
+}
+
+footer :nth-child(3) {
+  order: 3;
+  flex-basis: 15%;
+}
+
+footer :nth-child(1) {
+  order: 1;
+  flex-basis: 15%;
+}
+
+footer :nth-child(2) {
+  order: 2;
+  flex-basis: 15%;
+  flex-grow: 1;
+}
+
+footer ul {
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  margin: 0;
+  padding: 0
+}
+
+footer li {
+  list-style: none;
+  float: right;
+  margin: 0 5px;
+  font-size: large;
+  color: black;
+  z-index: 1;
+}
